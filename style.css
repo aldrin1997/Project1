@@ -1,0 +1,25 @@
+body {
+    background-color:rgb(58, 58, 58);
+}
+.logo{
+    font-weight:700;
+    font-style: italic;
+}
+
+.navlink{
+    color: white;
+}
+
+.navlink:hover{
+    color:white;
+    font-weight: 900;
+}
+
+.product{
+    transition: transform 2s;
+}
+
+.product:hover{
+  transform: rotate(-90deg);
+  
+}
