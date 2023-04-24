@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARDEÑO MMA Fitness Gym | Home</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <style>
+      body{
+        margin: 2px;
+        border: 2px;
+      }
+
+      .description p{
+        color:white;
+        align-items: center;
+      }
+      
+    .img{
+      height: 420px;
+      width:500px;
+      border: 20px;
+      border: white;
+    }
+    .benefits h1{
+      color: red;
+    }
+    .main {
+  display: flex;
+  flex-wrap:wrap;
+    border-radius: 20px;
+    margin:20px;
+  flex: 50%;
+  background-color:grey;
+  padding: 20px;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/right column */
+.side {
+  
+    border-radius: 20px;
+    margin:20px;
+    height:800px;
+  flex: 20%;
+  background-color:rgb(246, 218, 180);
+  padding: 20px;
+  cursor:pointer;
+}
+  
+      </style>
+  </head>
+  <body>
+
+    <header class="sticky-top">
+      <nav class="navbar bg-dark navbar-expand-lg p-3">
+        <div class="container">
+          <a class="navbar-brand logo text-white" href="index.html">CARDEÑO <br>MMA Fitness Gym </a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link navlink fw-bold text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="boxing.html">Boxing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="muaythai.html">Muay Thai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="Jiujitsu.html">Jiu-Jitsu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="section">
+      <div class="text-box">
+        <h3>Welcome to CARDEÑO Mixed Martial Arts Fitness Gym Muay-Thai + Fitness Program</h3>
+      </div>
+        <video autoplay play-inline class="background-clip">
+            <source src="Assets\muaythai.mp4" type="video/mp4">
+        </video>
+        <div class="button">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up to get a free Muay-Thai Lesson</button>
+        </div>
+    </div>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="First Name" name="First Name" required>
+
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Last Name" name="Last Name" required>
+      <br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="1" max="60" required>
+      <br><br>
+        <p>Gender</p>
+      <label for="Male">Male</label>
+      <input type="radio" id="Male" name="gender" value="male" required>
+      <label for="Female">Female</label>
+      <input type="radio" id="Female" name="cgender" value="female" required>
+      <label for="Non-binary">Non-Binary</label>
+      <input type="radio" id="Non-binary" name="gender" value="Non-Binary">
+      <label for="Prefernottosay">prefer not tosay</label>
+      <input type="radio" id="prefernottosay" name="gender" value="Prefernottosay">
+        <br><br>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div class="main">
+    <div class="description">
+      <h1 class="text-dark fw-bold">Muay-Thai <i class="logo text-danger fw-bold">History</i></h1>
+    <p>Muay Thai, translated into English as Thai Boxing, is the national sport of Thailand and is a martial art with origins in the ancient battlefield tactics of the Siamese (or Thai) army. It evolved from Krabi Krabong, literally long and short weapons, the weapons tactics of the Thai army. The early Muay Thai bouts pitted different companies within the Siamese army against each other in unarmed combat (Muay Boran) with few rules and no weight divisions or time limits. They became quite popular and eventually were shown in stadia across the country. In the early 20th century, time limits, boxing gloves as well as a uniform set of rules were introduced. During the latter half of the 20th century Muay Thai was exported to many countries and is now practiced by hundreds of thousands of people all over the world.
+      Muay Thai is known as “King of the Ring” in kickboxing circles. These fights feature punches, kicks, elbows, knees, standing grappling and head-butts to wear down and knock out their opponent. Thai training methods develop devastating power, speed and superb cardio-vascular endurance as well as fighting spirit. Muay Thai training is also quite safe thanks to sophisticated pad training that evolved to keep fighters healthy between fights. Muay Thai has also proven very effective outside the ring and has been embraced enthusiastically by practitioners of a variety of self-defense, sporting, military and law enforcement activities.</p>
+  
+      <p>Muay Thai training can have a profound impact on your physical fitness. It is a highly explosive and dynamic striking art that requires and develops athletic ability. The training regimen can consist of exercises such as running, pad work, heavy bag work, sparring, shadowboxing, and partner drills. It is a martial art that is great for self-defense as well as in-ring competition, making it a good fit for anyone looking to try a martial art.  
+  
+      Today, Evolve Daily shares 5 positive physical effects of Muay Thai training.</p>
+      <div class="benefits">
+        <h1 class="text-dark fw-bold">More Energy </h1>
+        <image src="https://cdn.evolve-mma.com/wp-content/uploads/2021/10/muay-thai-more-energy.jpg"></image>
+        <p>Muay Thai training is largely cardio-based. There is a mixture of low and high-intensity cardio in most training programs, which develops both your aerobic and anaerobic ability. Classes can include hundreds of kicks and punches thrown. During the beginning weeks of training, your body will start releasing more endorphins, along with activating other hormones. These hormones will give you more energy, raise your metabolism, and improve your mental clarity. The longer you consistently train, the more your body will adapt. Within a couple of months, your level of fitness will have increased to the point where everyday life feels easy. 
+  
+          As an added benefit, the same hormones activated through training can help combat depression, anxiety, or brain fog.</p>
+          <h1 class="text-dark fw-bold">Weight Loss </h1>
+          <video width="1000" height="400"controls>
+            <source src="assets/muaythai/muay-thai1.mp4" type="video/mp4"></video>
+            <p>A Muay Thai training program is one of the best ways to lose weight. The sheer amount of physical activity involved helps to keep you in a caloric deficit, one of the most important aspects of weight loss. An hour of Muay Thai class can burn between 500 – 1000 calories, making it a highly efficient way of maximizing your time. You would need to double or triple the time spent exercising to burn an equal amount of calories if you did something else, such as jogging. 
+
+              Many Muay Thai gyms also incorporate calisthenics and plyometric exercises. Calisthenics exercises are essentially bodyweight exercises, like push-ups and squats. Plyometric exercises are bodyweight exercises with an explosive execution. For example, a plyometric variation of a push-up is the clapping push-up. An explosive push is needed to get your body high enough to clap and catch yourself before hitting the ground. These bodyweight exercises burn a lot of calories and ingrain balance into your muscles.  
+              In addition, because of Muay Thai’s explosive striking, your metabolism will be elevated for about 6 hours after your class ends. This is a similar effect to high-intensity interval training (HIIT), and when combined with low-intensity training, such as shadowboxing or technical sparring, it’s hard not to lose excess weight! One thing to keep in mind is that you will be building muscle as you lose weight, so the number on the scale may not reflect your true progress! </p>
+              
+            <h1 class="text-dark fw-bold">Reduce Negative Effects Of Aging  </h1>
+              <video width="1000" height="400"controls>
+                <source src="assets/muaythai/ron tan.mp4" type="video/mp4"></video>
+                <p>Exercise is well known to help prevent and stave off dementia, as well as other cognitive impairments associated with aging. Adding the complexities of Muay Thai as a martial art only amplifies this effect. Similar to solving puzzles, the complexities of Muay Thai can help prevent cognitive decline and improve your mental acuity. 
+                  In addition, your sense of balance is greatly reinforced through your Muay Thai training. All of the repetition of kicking, while supporting your body weight with only one leg, takes your balance to a level beyond that of an average person. The repetitions of different strikes, often on a heavy bag or pads, increase your bone density, lowering the risk of you breaking a bone even if you do fall. This is thanks to Wolff’s Law, which asserts that bones will adapt to the pressures they are placed under. This means that the earlier you start training, the denser your bones have the potential to become.  </p>
+
+            <h1 class="text-dark fw-bold">Improves Immune System </h1>
+            <image src="https://cdn.evolve-mma.com/wp-content/uploads/2021/10/positive-physical-effects-of-muay-thai-training.jpg"></image>
+                <p>Now more than ever, it is important to prioritize health and prevent yourself from catching anything. The current pandemic has highlighted the importance of maintaining your physical fitness. Moderate exercise is linked to improved lung health and function, as well as decreasing overall inflammation within our body. Many people who engage in regular Muay Thai training were able to stay healthy due to the robust immune system training promotes. Our busy, sedentary lifestyles make it easy to stay out of shape, at the daily cost of our health. A Muay Thai class may be the perfect fit for someone that does not have much free time but is looking to be more health-conscious.</p>
+            
+                <h1 class="text-dark fw-bold">Improves Quality Of Life  </h1>
+                <image src="https://cdn.evolve-mma.com/wp-content/uploads/2021/10/muay-thai-improves-quality-of-life.jpg"></image>
+                    <p>Many people in the modern world live a highly sedentary lifestyle. It’s common for people to sit all day, from 9 am until 5 pm. They also were sitting on the commute to work and back home. All of this sitting has led to an epidemic of back/neck pain, as well as carpal tunnel and tendonitis. Kyphotic posture is all too common and often leads to injury later in life from the accumulated damage. Sitting for too long also causes your hamstrings and hip flexors to shorten, increasing the likelihood of injury when you do move around.  
+                      Consistent Muay Thai training gives your body resistance to all this pulling that sitting causes. Think of your muscles as rubber bands. When you sit all day, some of those get pulled out of place, or too tight. Muay Thai, and physical activity in general, is like a reset button for those rubber bands. This lets you stop accumulating tension and pain day after day. Without some kind of way to reset, chronic pain is not a question of if, but when. </p>
+      </div>
+  </div>
+</div>
+<div class="side">
+  <h4 class="text-danger fw-bold">Start Training Muay-Thai Today. 
+    <p>It’s never too early or too late to start Muay Thai! <br>The physical benefits are immense and it teaches you self-discipline and the value of hard work. Start your training today by trying a complimentary trial class with us! </h4>
+  <div class="container-fluid">
+    <form class="form-signup">
+        <div class="row g-2">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" name="firstname">
+                </div>
+                <div class="col-md-6">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" name="lastname">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Nickname</label>
+            <br>
+            <label for="email-address">Email Address</label>
+            <input type="email" class="form-control" name="email" placeholder="you@example.com">
+            <br>
+            <label for="age">Age</label>
+            <input type="text" class="form-control" name="age">
+            <br>
+        </div>
+             <hr>
+             <div class="row">
+                <button type="submit" class="btn btn-primary">Claim Free Trial Access</button>
+              </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </form>
+</div>
+
+
+</div>
+<section class="container-fluid">
+  <div class="row p-3">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="assets/aldrin.jpg" class="img-fluid" alt="MMA">
+            <p class="text-align-center fw-bold">Coach ALDRIN CARDEÑO</p>
+            <p class="fw-bold">Mixed-Martial Arts Fitness Instructor<br>Boxing/Muay-Thai/BJJ</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="assets/boxing2.jpg" class="img" alt="MMA">
+
+    </div>
+        <!--footer section-->
+        <footer class="container-fluid bg-dark text-white p-5">
+          <div class="row p-5">
+              <div class="col-md-4 my-auto">
+                  <h1 class="fw-bold">Contact Us</h1>
+                  <p>cardenommafitness.com</p>
+                  <p>(+63)9533274281</p>
+              </div>
+              <div class="col-md-4 my-auto">
+                <h1 class="fw-bold">Address</h1>
+                <p>344 Vulcan St. Brgy Southside Makati City</p>
+            </div>
+              <div class="col-md-4 my-auto">
+                  <p class="fw-bold mb-0">CARDEÑO MMA Fitness Gym</p>
+                  <p>Based in the Philippines</p>
+                  <small>Website developed by <strong>ALDRIN CARDEÑO</strong></small>
+              </div>
+          </div>
+      </footer>
+        <!-- Bootstrap Javascript -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+
+    
+</html>

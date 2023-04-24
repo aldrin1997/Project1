@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARDEÑO MMA Fitness Gym | Home</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    </style>
+    <style>
+      body{
+        margin: 2px;
+        border: 2px;
+      }
+
+      .description p{
+        color:white;
+        align-items: center;
+      }
+     
+    .img{
+      height: 420px;
+      width:500px;
+      border: 20px;
+      border: white;
+    }
+    .benefits h1{
+      color: red;
+    }
+    .main {
+  display: flex;
+  flex-wrap:wrap;
+    border-radius: 20px;
+    margin:20px;
+  flex: 50%;
+  background-color:grey;
+  padding: 20px;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/right column */
+.side {
+  
+    border-radius: 20px;
+    margin:20px;
+    height:800px;
+  flex: 20%;
+  background-color:rgb(246, 218, 180);
+  padding: 20px;
+  cursor:pointer;
+}
+  
+      </style>
+  </head>
+  <body>
+
+    <header class="sticky-top">
+      <nav class="navbar bg-dark navbar-expand-lg p-3">
+        <div class="container">
+          <a class="navbar-brand logo text-white" href="index.html">CARDEÑO <br>MMA Fitness Gym </a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link navlink fw-bold text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="boxing.html">Boxing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="muaythai.html">Muay Thai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="Jiujitsu.html">Jiu-Jitsu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="section">
+      <div class="text-box">
+        <h3>Welcome to CARDEÑO Mixed Martial Arts Fitness Gym BJJ + Fitness Program</h3>
+      </div>
+        <video autoplay play-inline class="background-clip">
+            <source src="Assets/jiu-jitsu/jiu jitsu.mp4" type="video/mp4">
+        </video>
+        <div class="button">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up to get a free BJJ Lesson</button>
+        </div>
+    </div>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="First Name" name="First Name" required>
+
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Last Name" name="Last Name" required>
+      <br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" min="1" max="60" required>
+      <br><br>
+        <p>Gender</p>
+      <label for="Male">Male</label>
+      <input type="radio" id="Male" name="gender" value="male" required>
+      <label for="Female">Female</label>
+      <input type="radio" id="Female" name="cgender" value="female" required>
+      <label for="Non-binary">Non-Binary</label>
+      <input type="radio" id="Non-binary" name="gender" value="Non-Binary">
+      <label for="Prefernottosay">prefer not tosay</label>
+      <input type="radio" id="prefernottosay" name="gender" value="Prefernottosay">
+        <br><br>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div class="main">
+    <div class="description">
+      <h1 class="text-dark fw-bold">Welcome to  <i class="logo text-danger fw-bold">CARDEÑO MMA Fitness Gym BJJ + Fitness Program</i></h1>
+    <p>Brazilian Jiujitsu otherwise known as the “gentle art” is a form of grappling that uses leverage, technique, and proper timing to control without striking or harming your opponent. This concept has made Brazilian Jiujitsu among the most sought out martial arts for self-defence for kids and adults, as well as combat sports.
+
+      Rooted in Japan, CARDEÑO MMA Fitness Gym has produced several champions and has spread throughout Philippines.
+  
+      CARDEÑO MMA Fitness Gym BJJ + Fitness Program aims to bring the best Jiujitsu to the Philippines and to cultivate a culture of respect, humility, camaraderie and honor.</p>
+  
+    <h1>Hidden Benefits Of BJJ That Can Change Your Life</h1>
+    <image src="https://bjj-world.com/wp-content/uploads/2021/03/stacks_image_1428-768x329-1.jpg"></image>
+    <p>BJJ is fun and all, and people enjoy coming back to training. If you take an outsider’s to look at it, you’ll probably be wondering why people enjoy getting tortured so much that they crave for more and you can’t get them out of the gym, even in pandemic times? The truth is, Jiu-Jitsu is not just fun. There are plenty of benefits Of BJJ training, some of which are probably well known to everyone,. However, it is those not-so-obvious ones that you might not even discover until you’re years in, that can really impact your life in ways you’ve never imagined.</p>
+    <p>All martial arts out there, and pretty much any other sports claim they are the perfect fit for everyone. That would mean people of all ages, sexes, professions, athletic abilities, etc. The thing is, with most sports, and particularly martial arts, this is mostly a marketing trick to get people to sign up. With Brazilian Jiu-Jitsu it is the truth. Granted, you will need to figure out the right academy that truly offers BJJ classes organized in a way for everyone, but they are out there. It is the benefits of BJJ training that are the real draw for people, and not just the training itself. It is exactly the benefits that you get from the training that crossover to all other walks of life that make it possible for everyone to train Jiu-Jitsu, and love it!</p>
+    <h1>BJJ Benefits You Already Know Of</h1>  
+    <p>Some of the Benefits of BJJ are quite well known, but still, it wouldn’t hurt t go over them again. There is rarely a sport out there that offers so much in terms of physical and mental integration during each training session. On top of it all, Training Brazilian Jiu-Jitsu means you get both a fitness component, and you get to train a martial art. the second part can further yield different benefits depending on your goals.</p>
+    <p>For example, if you want to be a competitor, you get to train like one and take part in sports competitions which can be BJJ, grappling or MMA. If you are more focused on self-defense, you get that too by training in Jiu-Jitsu. Oh, and it is fun and unusual, and if you are lucky enough to be in one of the progressive gyms that don’t mind evolving, you’ll be in for the time of your life!.</p>
+    <div class="benefits">
+        <h1 class="text-dark fw-bold">Fitness </h1>
+        <p>From a fitness standpoint, you won’t know how much BJJ helps you get into shape until you take some time off. No seriously. When you first walk into the gym, even if you’re ready to run marathons, win the CrossFit games or lift insane amounts of weight, you’ll die at about halfway through your first roll. After training for a few months, provided that you are regular, things will slowly become easier. While you will see clear benefits on your body, you will also notice that all your athletic abilities have improved.<br><br>
+
+          Fitness benefits of BJJ training include improved flexibility, increased relative strength, better cardio, a unique endurance, and if you train long enough, strategic use of explosive power and the ability to control your breathing.
+          
+         <br><br> If you take some time off of BJJ though (which I don’t recommend), you will notice all the fitness benefits the moment you walk back in. While it will take considerably less time to get them back, you’ll become aware of just how much BJJ has made you fitter overall.</p>
+          <h1 class="text-dark fw-bold">Stress Relief </h1>
+            <p>The one common feeling people share after training Jiu-Jitsu is being calm and collected. After fighting for your life (in a safe environment), for a couple of hours, everything else seems unimportant. It is, especially when you realize how vulnerable you are and that there’s always someone that can beat you.
+
+              When you come to think of it all, all the stress you bring from everyday life stays right there on the mats. There is nothing that will blow some steam off like fighting with another person/. The only catch is you won’t get t hurt when doing it in BJJ, and you can still go quite drastically. Afterward, you’re just so Zen that almost nothing can disturb your peace of mind.<br><br> When you come to think of it all, all the stress you bring from everyday life stays right there on the mats. There is nothing that will blow some steam off like fighting with another person/. The only catch is you won’t get t hurt when doing it in BJJ, and you can still go quite drastically. Afterward, you’re just so Zen that almost nothing can disturb your peace of mind. </p>
+              
+            <h1 class="text-dark fw-bold">Community</h1>
+                <p>A huge benefit of BJJ is becoming part of a very unique community. While all communities can claim to be unique, the Jiu-Jitsu one has a huge virtue you can always rely upon – being incredibly supportive. Basically, wherever you find yourself in the world, if you turn to BJJ folks for anything, they’ll go out of their way to help you. it is not really something that any other community can claim, especially not on a global level. I mean, even at tournaments where people fight each other, the respect, courtesy, and overall chill vibes are unlike any other place on Earth. </p>
+
+            <h1 class="text-dark fw-bold">Self-Defense </h1>
+                <p>In this context, there’s not much to say. Every martial art will teach you things about self-defense. Yes, even Aikido. Jiu-Jitsu self-defense won’t have you train scenarios and the likes but will teach you how to be comfortable in a fight. That is more than most other martial arts or self-defense systems out there can claim to be able to achieve. With lots of self-defense situations in real life ending up on the ground and in extremely close contact, the list of benefits of BJJ training in this department alone is too big to go over.<br><br>In all honesty though, if you want to be able to fight, BJJ alone won’t cut it. You’ll need some standing training as well, and your best bet is taking up MMA training in addition to BJJ classes.</p>
+            
+                <h1 class="text-dark fw-bold">Discipline </h1>
+                    <p>Discipline is a big thing in martial arts. However, the way they teach it is pretty old-school and is similar to a military-style discipline. In this sense, BJJ classes are quite looser in terms of drill sergeant-type behavior. However, the discipline you get to learn from BJJ is just as, if not more strict, as the one you learn from traditional martial arts. You simply get to figure out that you need to abide by certain principles if you want to grow and learn. That is a huge lesson that many people fail to learn in modern society.</p>
+
+                    <h1 class="text-dark fw-bold">Safe Sparring</h1>
+                    <p>This is a unique benefit of BJJ that really elevates it above most other combat sports ou there. I say combat sports because martial arts sparring doesn’t come even close to that of boxing, wrestling, kickboxing or MMA. BJJ, of course, falls under this category. The thing is that going live with someone is next to impossible without getting injured in any of the other combat sports.<br><br>
+                      This is a unique benefit of BJJ that really elevates it above most other combat sports ou there. I say combat sports because martial arts sparring doesn’t come even close to that of boxing, wrestling, kickboxing or MMA. BJJ, of course, falls under this category. The thing is that going live with someone is next to impossible without getting injured in any of the other combat sports.</p>
+                    
+                      <h1 class="text-dark fw-bold">6 Benefits Of BJJ That Go Past Sports</h1>
+                      <p>You basically area ware of all of the above benefits of training BJJ even if you are not training. They’re quite obvious, or you’ve heard lots about them from your Jiu-Jitsu friends. However, there’s huge value in those benefits of BJJ that are not so obvious and are not just about what happens on the mats while you are training. These are the benefits that make you grow as a person and will help you with your daily life.</p>
+                      
+                      <h1 class="text-dark fw-bold">1. Better Habits</h1>
+                      <p>One thing we’re not aware of in modern life is how much of the things we do are just habits. The thing with habits is they can be highly productive, or completely hedonistic. In both cases, there is a reward, albeit a very different one.
+
+                        One of the most important benefits of BJJ is creating positive habits. For example, coming to training regularly will teach you that doing something hard is actually a great way to feel much better about yourself than doing something easy. Pacing up a gym bag to train at the start of your day is a great way to make going to BJJ a habit, and let BJJ teach you all about good habits along the way. for example, the habit of not listening to what people are saying, just like you do when your instructors speaking</p>
+      
+                        <h1 class="text-dark fw-bold">2. Problem-Solving Skills</h1>
+                        <image src="https://th.bing.com/th/id/OIP.4HLuPnN8PK_fYeMuCBe9uAHaGy?pid=ImgDet&rs=1"></image>
+                        <p>People always talk about this, but somehow, you cant’ really pinpoint it. Let me help. Compare the first time you were caught in the mount with the last time. Is there a difference? Of course, there is. The first time you were panicking to get out and digging yourself a deeper grave in the process. Now, even though you might be up against a black belt, you’re tactically trying to solve the puzzle and deflect their attacks as they come. That is high-level problem-solving. Under pressure. In a simulated life or death situation. Problem-solving doesn’t get better than that.
+
+                          Once again there’s a habit here, or better yet, the confidence of knowing you are capable of solving anything, no matter what the circumstances are.</p>
+                          <h1 class="text-dark fw-bold">2. Problem-Solving Skills</h1>
+                          <p>This has to do with confidence yet again. If you are a hobbyist athlete, looking to just do some fun activity, you’re probably not seeing yourself doing Imanari rolls into inverted heel hooks or Tornado guard sweeps. The thing is, after a few years, these things won’t seem like they’re Cirque De Solei stuff, but something fundamental. And the most beautiful thing about it is that you get to apply this skill to everything in life. All it takes is knowing you can do more!</p>
+                          <h1 class="text-dark fw-bold">4. Progressive Learning</h1>
+                          <p>A skill that is lacking in today’s modern society. People want to become experts overnight, and YouTube ads that promise this can happen are not helping. Well, if you want to learn BJJ, you will need about 10 years, if we take the black belt as the highest metric of learning progress in the sport. Learning with the method of delayed gratification is the mark of having a growth mindset, which is exactly what you will need in Jiu-Jitsu. Every belt level is a different milestone and you get to use everything you learn at previous levels in the new ones you reach. the mo</p>
+                          <h1 class="text-dark fw-bold">4. Progressive Learning</h1>
+                          <p>A skill that is lacking in today’s modern society. People want to become experts overnight, and YouTube ads that promise this can happen are not helping. Well, if you want to learn BJJ, you will need about 10 years, if we take the black belt as the highest metric of learning progress in the sport. Learning with the method of delayed gratification is the mark of having a growth mindset, which is exactly what you will need in Jiu-Jitsu. Every belt level is a different milestone and you get to use everything you learn at previous levels in the new ones you reach. the moment you take this ability outside of the gym, you will be amazed at what you can accomplish.</p>
+                          <h1 class="text-dark fw-bold">5. Improved Mental Health</h1>
+                          <p>This is something I really stand behind as being a part of the most underrated benefit of BJJ. Mental health awareness is rising, and it is something that BJJ contributes to largely. namely, Jiu-Jitsu training can be extremely helpful to get you through a bunch of issues, ranging from depression to anxiety, from panic attacks to overcoming certain phobias. Take it from someone who has experienced the power of BJJ in resolving such issues</p>
+                          <h1 class="text-dark fw-bold">6. Leaving Comfort Zones</h1>
+                         <image src="https://usercontent.one/wp/judomania.no/wp-content/uploads/2021/05/48711942732_e064b01dd9_o.jpg" width="800"></image>
+                          <p>If I could pinpoint one thing that Jiu-Jitsu will certainly make you aware of, it is that living inside a comfort zone is not fun. It is just comfortable. Just the way being in mount is. However, when you get too comfortable, someone will buck and throw you off, and then, you have no die what to do. Well, in BJJ, you don’t have the choice of staying in mount all the time. You will have to defend, you will have to escape and you will have to tap. And if you want to grow, you will have to try new things, as scary as they are. Once you know how to do this in the safe environment of the gym, you’ll be able t take it out and apply it to everything else you do.</p>
+                          <h1 class="text-dark fw-bold">Final Words</h1>
+                          <p>The benefits of BJJ do not start or end with the ones I covered above. They are [retty much endless and can be both obvious and quite inconspicuous. Furthermore, they can be related to the sport, or extend far beyond the confines of a gym. In any case, regardless of the reasons, you’re training Jiu-Jitsu, or your goals you will benefit from rolling around with sweaty people wearing funny pajamas or brightly colored thighs immensely.</p>
+                          <div class="books">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <iframe src="https://bjj-world.com/webffound" height="550"></iframe>
+                              </div>
+                              <div class="col-md-6">
+                                <image src="https://ms-newsouthbooks-com-au.s3.amazonaws.com/WorkImage/WorkEdition/9784805313244.jpg" height="550"></image>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+  </div>
+</div>
+<div class="side">
+  <h4 class="text-danger fw-bold">Start your Brazillian Jiu-Jitsu Journey Today. 
+    <p>I believe that the biggest advance is don’t have ego when you are training just keep focused on what on what you are doing  and always keep trying to Improve, Improve, Improve. -Bernardo Faria <br><br> Start your training today by trying a complimentary trial class with us! </h4>
+  <div class="container-fluid">
+    <form class="form-signup">
+        <div class="row g-2">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" name="firstname">
+                </div>
+                <div class="col-md-6">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" name="lastname">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Nickname</label>
+            <br>
+            <label for="email-address">Email Address</label>
+            <input type="email" class="form-control" name="email" placeholder="you@example.com">
+            <br>
+            <label for="age">Age</label>
+            <input type="text" class="form-control" name="age">
+            <br>
+        </div>
+             <hr>
+             <div class="row">
+                <button type="submit" class="btn btn-primary">Claim Free Trial Access</button>
+              </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </form>
+</div>
+
+
+</div>
+<section class="container-fluid">
+  <div class="row p-3">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body text-center">
+            <img src="assets/aldrin.jpg" class="img-fluid" alt="MMA">
+            <p class="text-align-center fw-bold">Coach ALDRIN CARDEÑO</p>
+            <p class="fw-bold">Mixed-Martial Arts Fitness Instructor<br>Boxing/Muay-Thai/BJJ</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <img src="assets/boxing2.jpg" class="img" alt="MMA">
+
+    </div>
+        <!--footer section-->
+        <footer class="container-fluid bg-dark text-white p-5">
+          <div class="row p-5">
+              <div class="col-md-4 my-auto">
+                  <h1 class="fw-bold">Contact Us</h1>
+                  <p>cardenommafitness.com</p>
+                  <p>(+63)9533274281</p>
+              </div>
+              <div class="col-md-4 my-auto">
+                <h1 class="fw-bold">Address</h1>
+                <p>344 Vulcan St. Brgy Southside Makati City</p>
+            </div>
+              <div class="col-md-4 my-auto">
+                  <p class="fw-bold mb-0">CARDEÑO MMA Fitness Gym</p>
+                  <p>Based in the Philippines</p>
+                  <small>Website developed by <strong>ALDRIN CARDEÑO</strong></small>
+              </div>
+          </div>
+      </footer>
+        <!-- Bootstrap Javascript -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+
+    
+</html>
